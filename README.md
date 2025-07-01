@@ -15,8 +15,8 @@ This repository contains my projects and assignments for the Introduction to Pyt
 - **Description**: A number guessing game that runs twice, asking for a number and a second player to guess, with hints.
 - **Concepts Covered**: Variables, data types, basic input/output, loops, functions, logic
 - **Files**: `numberGuess.py`
-- **Date Completed**: June 30, 2025
-- ***Reflections***: qwerty
+- **Date Completed**: July 1, 2025
+- ***Reflections***: This project seemed very simple in pieces, but the complexity came from the requirements to count guesses and especially to keep the game running. I think there could be a way to swap the two users continuously if the game continued, rather than the easy yet clunky way of just restarting the whole thing because now the players have to enter their names again. Maybe another big loop could enclose the whole thing and then ask after the CONTINUE- Y choice to pick which user is going to go first this whole new iteration.
 
 ### Midterm Project 2: Madlibs Generator
 - **Description**: Asks a user for nouns, verbs, adj etc and creates a story with the input.
