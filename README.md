@@ -1,4 +1,4 @@
-# Introduction to Python - Course Projects
+# Introduction to Python - George's Course Projects
 
 ## Course Information
 - **Course**: 2025SU-CPSC-111-001F-8W
@@ -15,7 +15,7 @@ This repository contains my projects and assignments for the Introduction to Pyt
 - **Description**: A number guessing game that runs twice, asking for a number and a second player to guess, with hints.
 - **Concepts Covered**: Variables, data types, basic input/output, loops, functions, logic
 - **Files**: `numberGuess.py`
-- **Date Completed**: [June 30, 2025]
+- **Date Completed**: June 30, 2025
 - ***Reflections***: qwerty
 
 ### Midterm Project 2: Madlibs Generator
@@ -26,8 +26,8 @@ This repository contains my projects and assignments for the Introduction to Pyt
 - ***Reflections***: qwerty
 
 ### Midterm Project 3: Contact Book
-- **Description**: Brief description of what this project does
-- **Concepts Covered**: Variables, data types, basic input/output
+- **Description**: Create a contact book with the ability to search records by each category.
+- **Concepts Covered**: Variables, data types, basic io, loops, lists, arrays, logic, sorting
 - **Files**: `contactBook.py`
 - **Date Completed**: [Date]
 - ***Reflections***: qwerty
@@ -58,6 +58,7 @@ intro-python-course/
 │   ├── assignment1.py
 │   ├── assignment2.py
 │   └── assignment3.py
+│   └── ...
 ├── practice/
 │   ├── exercises.py
 │   └── solutions.py
