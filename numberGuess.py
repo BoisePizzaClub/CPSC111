@@ -5,7 +5,7 @@
 """
 Project Description:
 1.	Number guessing 1 - 100 program.
-- Have User1 input a number from 1 - 100
++ Have User1 input a number from 1 - 100
 - check to make sure that user did not cheat or type letters etc.
 - Then have User2 guess the number until he/she is correct.
 - Gives clue about guessing higher or lower after each guess to help User2.
@@ -15,13 +15,24 @@ Project Description:
 """
 
 #ask for input and assign variables. Lets start with User1 name and the mystery number
-str userOne = input("Hi! What is your name?")
-int magicNumber = input("Hello "+userOne, "give me a number between 1 and 100")
+userOne = input("Hi! What is your name?")
+print("\nHello "+ userOne +"!")
+while True:
+    magicNumber = int(input("Give me a number from 1 to 100: "))
+    if 0 <= magicNumber <= 101:
+        print("You entered",magicNumber)
+        break
+    else:
+        print("You entered",magicNumber ,"that is not a number between 1-100! Please try again \:\)")
+
 #ok probably do a loop here ^ if whatever entered is not an integer btween 1-100 then ask again?
 
+#clear screen
+print("\n"*42)
+
 #switch to User2 and ask for their name
-str userTwo = input("Hi! what is your name?")
-print "Your friend "+ userOne + " Just gave me a number between 1 and 100! Can you guess that number?"
+userTwo = input("Hi! what is your name?")
+print (userTwo + "\, Your friend "+ userOne + " Just gave me a number between 1 and 100! Can you guess that number?")
 
 # ---Big ass loop here probably
 '''
@@ -38,7 +49,7 @@ if string is not an int
 #make a function for wrong input type
 def inputTypeCheck():
     #code to check if int between 1-100
-    print "Hey" + userTwo + ", you entered something other than a number! \nPlease try again!"
+    print ("Hey" + userTwo + ", you entered something other than a number! \nPlease try again!")
 
 # -baby loop
 
@@ -47,10 +58,10 @@ def inputTypeCheck():
 if 
 '''
 
-bool higherThanMagic = ""
+#bool higherThanMagic = ""
 
 def guessWrong():
-    print "Hey" + userTwo +", you entered an the wrong number! \nPlease try again!"
+    print ("Hey" + userTwo +", you entered an the wrong number! \nPlease try again!")
 
 
 #make a function for wrong guess
