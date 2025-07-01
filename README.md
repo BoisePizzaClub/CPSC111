@@ -12,28 +12,32 @@ This repository contains my projects and assignments for the Introduction to Pyt
 ## Projects Overview
 
 ### Midterm Project1 : Number guessing 1 – 100 program.
-- **Description**: Brief description of what this project does
-- **Concepts Covered**: Variables, data types, basic input/output
+- **Description**: A number guessing game that runs twice, asking for a number and a second player to guess, with hints.
+- **Concepts Covered**: Variables, data types, basic input/output, loops, functions, logic
 - **Files**: `numberGuess.py`
-- **Date Completed**: [Date]
+- **Date Completed**: [June 30, 2025]
+- ***Reflections***: qwerty
 
 ### Midterm Project 2: Madlibs Generator
-- **Description**: Brief description of what this project does
-- **Concepts Covered**: Variables, data types, basic input/output
+- **Description**: Asks a user for nouns, verbs, adj etc and creates a story with the input.
+- **Concepts Covered**: Variables, basic io, lists, loops, logic
 - **Files**: `madLibs.py`
 - **Date Completed**: [Date]
+- ***Reflections***: qwerty
 
 ### Midterm Project 3: Contact Book
 - **Description**: Brief description of what this project does
 - **Concepts Covered**: Variables, data types, basic input/output
 - **Files**: `contactBook.py`
 - **Date Completed**: [Date]
+- ***Reflections***: qwerty
 
 ### Final Project: [Project Name]
 - **Description**: Brief description of what this project does
 - **Concepts Covered**: Conditionals, loops, functions
 - **Files**: `finalProject.py`
 - **Date Completed**: [Date]
+- ***Reflections***: qwerty
 
 #### Assignment 1: [Assingment Name]
 - **Description**: Brief description of what this project does
