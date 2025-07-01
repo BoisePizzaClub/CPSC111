@@ -25,7 +25,7 @@ while True:
                 print("You entered",magicNumber)
                 break
             else:
-                print("You entered",magicNumber ,"that is not a number between 1-100! Please try again \:\)")
+                print("You entered",magicNumber ,"that is not a number between 1-100! Please try again :")
 
         #ok probably do a loop here ^ if whatever entered is not an integer btween 1-100 then ask again?
         #find a way later on to also handle input other than integers...
@@ -51,7 +51,7 @@ while True:
             elif guessNumber > magicNumber:
                 print("\nHey",userTwo, "your guess of",guessNumber, "is too high! Try again: " )     
             else:
-                print("You entered",magicNumber ,"that is not a number between 1-100! Please try again \:\)")
+                print("You entered",magicNumber ,"that is not a number between 1-100! Please try again :)")
 
 
         #or do that in a function inside loop V
@@ -70,7 +70,7 @@ while True:
                 print("You entered",magicNumber)
                 break
             else:
-                print("You entered",magicNumber ,"that is not a number between 1-100! Please try again \:\)")
+                print("You entered",magicNumber ,"that is not a number between 1-100! Please try again :)")
 
         #now for userOne to guess
         print ("\n"*42, userOne + ", Your friend "+ userTwo + " just gave me a number between 1 and 100! Can you guess that number?\n")
@@ -87,13 +87,13 @@ while True:
             elif guessNumber > magicNumber:
                 print("\nHey",userOne, "your guess of",guessNumber, "is too high! Try again: " )     
             else:
-                print("You entered",magicNumber ,"that is not a number between 1-100! Please try again \:\)")
+                print("You entered",magicNumber ,"that is not a number between 1-100! Please try again :)")
 
         #ask if game continues
         print("Would you guys like to continue this guessing game?")
         choice = input("Enter y to continue, anything else to quit!: ")
     else:
-        print("/n*8", "ok goodbye!", "\n*4")
+        print("\n"*8, "ok goodbye!", "\n"*4)
         break
     
 
@@ -104,7 +104,7 @@ while True:
 #make a function for wrong input type
 def inputTypeCheck():
     #code to check if int between 1-100
-    print ("Hey" + userTwo + ", you entered something other than a number! \nPlease try again!")
+    print ("Hey" + userTwo + ", you entered something other than a number! \nPlease try again! ")
 
 # -baby loop
 
