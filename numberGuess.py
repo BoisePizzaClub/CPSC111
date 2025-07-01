@@ -3,6 +3,12 @@
 #numberGuess.py
 
 """
+######## AI Acknowledgement Statement
+- I acknowledge the use of Claude Ai in the couple parts where I needed to clear the screen of the entered number; the prompts used was "how do I clear a terminal in a python command line app" The output given included a bunch of modules and verbose things I didn't learn yet so I just ignored it and ended up printing a bunch of newlines...
+########
+"""
+
+"""
 Project Description:
 1.	Number guessing 1 - 100 program.
 + Have User1 input a number from 1 - 100
@@ -11,16 +17,37 @@ Project Description:
 + Gives clue about guessing higher or lower after each guess to help User2.
 + Counts how many guesses it took to get the correct answer, and displays that at the end.
 + Restarts asking User2 to enter their number now, and repeats for User2.
-- I can do this until I type “quit” at any point that gets me out of the program, but the program gives me the option to quit by warning me that I am about to exit y/n.
++ I can do this until I type “quit” at any point that gets me out of the program, but the program gives me the option to quit by warning me that I am about to exit y/n.
 """
+
+quit = False
 choice = "y"
+
+print("\n\n     GAME OF GUESSES!" + "\n     type quit at any time to quit.")
 while True:
     if choice == "y":
         #ask for input and assign variables. Lets start with User1 name and the mystery number
         userOne = input("\nHi! What is your name? ")
+        #QUIT OPTION
+        if userOne == "quit":
+            quit = input("Are you sure you want to exit? Enter \"y\" to quit or anything else to continue :)")
+            if quit == "y":
+                print("\n"*8, "ok goodbye!", "\n"*4)
+                exit()
+            else:
+                userOne = input("\nOk welcome back! What is your name? ")
+
         print("\nHello "+ userOne +"!")
         while True:
             magicNumber = input("Give me a number from 1 to 100: ")
+            #QUIT OPTION
+            if magicNumber == "quit":
+                quit = input("Are you sure you want to exit? Enter \"y\" to quit or anything else to continue :)")
+                if quit == "y":
+                    print("\n"*8, "ok goodbye!", "\n"*4)
+                    exit()
+                else:
+                    magicNumber = ""
             if 0 <= int(magicNumber) <= 101:
                 print("You entered",magicNumber)
                 break
@@ -36,6 +63,14 @@ while True:
 
         #switch to User2 and ask for their name
         userTwo = input("Hi! what is your name? ")
+        #QUIT OPTION
+        if userTwo == "quit":
+            quit = input("Are you sure you want to exit? Enter \"y\" to quit or anything else to continue :)")
+            if quit == "y":
+                print("\n"*8, "ok goodbye!", "\n"*4)
+                exit()
+            else:
+                userTwo = input("\nOk welcome back! What is your name? ")
         print (userTwo + ", Your friend "+ userOne + " just gave me a number between 1 and 100! Can you guess that number?\n")
 
         # ---Big ass loop here probably
@@ -43,6 +78,15 @@ while True:
         while True:
             guessNumber = input("Give me a guess! ")
             guessCount += 1
+            #QUIT OPTION
+            if guessNumber == "quit":
+                quit = input("Are you sure you want to exit? Enter \"y\" to quit or anything else to continue :)")
+                if quit == "y":
+                    print("\n"*8, "ok goodbye!", "\n"*4)
+                    exit()
+            else:
+                magicNumber = ""
+                break
             if guessNumber == magicNumber:
                 print("\n"*3 + "CONGRATS", userTwo + "!, YOU GUESSED",guessNumber +" WHICH IS CORRECT! you guessed it in",guessCount,"tries!!" + "\n"*3)
                 break
@@ -66,6 +110,16 @@ while True:
         print("\nHello "+ userTwo +"!")
         while True:
             magicNumber = input("Give me a number from 1 to 100: ")
+            #QUIT OPTION
+            if magicNumber == "quit":
+                quit = input("Are you sure you want to exit? Enter \"y\" to quit or anything else to continue :)")
+                if quit == "y":
+                    print("\n"*8, "ok goodbye!", "\n"*4)
+                    exit()
+            else:
+                print("\nOk welcome back!")
+                magicNumber = ''
+                break
             if 0 <= int(magicNumber) <= 101:
                 print("You entered",magicNumber)
                 break
@@ -78,6 +132,16 @@ while True:
         guessCount = 0
         while True:
             guessNumber = input("Give me a guess! ")
+            #QUIT OPTION
+            if guessNumber == "quit":
+                quit = input("Are you sure you want to exit? Enter \"y\" to quit or anything else to continue :)")
+                if quit == "y":
+                    print("\n"*8, "ok goodbye!", "\n"*4)
+                    exit()
+            else:
+                print("\nOk welcome back!")
+                guessNumber = ""
+                break
             guessCount += 1
             if guessNumber == magicNumber:
                 print("\n"*3 + "CONGRATS", userOne + "!, YOU GUESSED",guessNumber +" WHICH IS CORRECT! you guessed it in",guessCount,"tries!!" + "\n"*3)
@@ -92,6 +156,14 @@ while True:
         #ask if game continues
         print("Would you guys like to continue this guessing game?")
         choice = input("Enter y to continue, anything else to quit!: ")
+        if choice == "y":
+            quit = input("Are you sure you want to exit? Enter \"y\" to quit or anything else to continue :)")
+            if quit == "y":
+               print("\n"*8, "ok goodbye!", "\n"*4)
+            else:
+                print("\nOk welcome back!")
+                break
+
     else:
         print("\n"*8, "ok goodbye!", "\n"*4)
         break
