@@ -58,9 +58,10 @@ while choice.lower() == "y":
     # get input from the user
     monthly_investment = float(input("Enter monthly investment:\t\t"))
     yearly_interest_rate = float(input("Enter yearly interest rate percent:\t"))
-    #[G] add clarity with feedback
-    print("Ok, you entered an investment of\t",monthly_investment, "\n\twith an interest rate of\t", str(yearly_interest_rate) + "%")
     years = int(input("Enter number of years:\t\t\t"))
+    #[G] add clarity with feedback
+    print("Ok, you entered an investment of\t","$"+str(monthly_investment), "\n\twith an interest rate of\t", str(yearly_interest_rate) + "%\n\t for a total of\t\t\t", years, "year(s)!")
+
 
     # convert yearly values to monthly values
     monthly_interest_rate = yearly_interest_rate / 12 / 100
