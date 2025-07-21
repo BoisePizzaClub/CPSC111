@@ -55,9 +55,19 @@ intro-python-course/
 ├── madLibs.py
 ├── contactBook.py
 ├── assignments/
-│   ├── assignment1.py
-│   ├── assignment2.py
-│   └── assignment3.py
+│   ├── 001_C_1_3_0_hiss.py
+│   ├── 002_M_Ex_1-1.py
+│   └── 003_C_2_3_3_operators.py
+│   └── 004_C_2_4_7_apples.py
+│   └── 005_C_2_4_9_Lab_1_variables.py
+│   └── 
+│   └── 
+│   └── 
+│   └── 
+│   └── 
+│   └── 
+│   └── 
+│   └── 
 │   └── ...
 ├── practice/
 │   ├── exercises.py
