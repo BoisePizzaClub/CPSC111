@@ -60,7 +60,7 @@ intro-python-course/
 │   └── 003_C_2_3_3_operators.py
 │   └── 004_C_2_4_7_apples.py
 │   └── 005_C_2_4_9_Lab_1_variables.py
-│   └── 
+│   └── 006_C_2_4_10_Lab_operators.py
 │   └── 
 │   └── 
 │   └── 
