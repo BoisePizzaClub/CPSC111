@@ -57,17 +57,25 @@ intro-python-course/
 ├── assignments/
 │   ├── 001_C_1_3_0_hiss.py
 │   ├── 002_M_Ex_1-1.py
-│   └── 003_C_2_3_3_operators.py
-│   └── 004_C_2_4_7_apples.py
-│   └── 005_C_2_4_9_Lab_1_variables.py
-│   └── 006_C_2_4_10_Lab_operators.py
-│   └── 
-│   └── 
-│   └── 
-│   └── 
-│   └── 
-│   └── 
-│   └── 
+│   ├── 003_C_2_3_3_operators.py
+│   ├── 004_C_2_4_7_apples.py
+│   ├── 005_C_2_4_9_Lab_1_variables.py
+│   ├── 006_C_2_4_10_Lab_operators.py
+│   ├── 007_C_2_5_3_Lab_comments.py
+│   ├── 008_C_2_6_9_Lab_simple_input_and_output.py
+│   ├── 009_C_2_6_10_Lab_operators_and_expressions.py
+│   ├── 010_C_2_6_11_Lab_operators_and_expressions2.py
+│   ├── 011_C_3_1_6__variables_q_and-a.py
+│   ├── 012_C_3_1_10_Lab_1_comparison_operators.py
+│   ├── 013_C_3_1_11_Lab_2_essentials_of_if_else.py
+│   ├── 014_C_3_1_12_Lab_3_essentials_of_if_elif_else.py
+│   ├── 015_C_3_2_4_Lab_1_guess_the_number.py
+│   ├── 016_C_3_2_7_Lab_1_essentials_of_the_for_loop.py
+│   ├── 017_C_3_2_9_Lab_2_the_break_statement -Stuck.py
+│   ├── 018_C_3_2_10_Lab_3_the_continue_statement__ugly.py
+│   ├── 019_C_3_2_11_Lab_4_the_continue_statement_pretty.py
+│   ├── 
+│   ├── 
 │   └── ...
 ├── practice/
 │   ├── exercises.py
