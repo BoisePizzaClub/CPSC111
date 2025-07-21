@@ -32,9 +32,9 @@ print("ok after all this, it converts back to", newMPH,"miles per hour.")
 
 print("\n"*3)
 
-range=int(input("Enter a range in kilometers between 150-400 for your target!\t"))
-#15 ish minutes flight time for maybe 400km?
-timeFlightTotalMin=(range/400)*15
+range=int(input("Enter a range in kilometers between 150-300 for your target!\t"))
+#6 ish minutes flight time for maybe 300km?
+timeFlightTotalMin=(range/300)*6.0
 timeFlightTotalSec=timeFlightTotalMin*60
 print("\nThe total flight time is probably", timeFlightTotalMin, "minutes....")
 
@@ -92,8 +92,23 @@ print("now this missile radar will only see ", tickMath(113), "meters remaining!
 
 #maybe a better approach would be a transciever on the missile, so the missile did the actual radar tracking after a much more rough directional launch, and would relay the raw data back to the launcher vehicle for computation. The onboard radar would possible have a range of at least multiple kilometers so the launcher wouldn't need to track with such sensitivity throughout the terminal phase of the target when the target is at the maximum velocity. I'm guessing the interceptor radar can be much more loud and with a smaller angle to listen to so losing track of the target would be very difficult, versus a ground based system that is staring at presumably a large third of the sky.
 
+# my_list1=[1,2]
+# my_list1.extend([1,2,[3,4].extend([1])])
+# print(my_list1)
 
 
+def my_function(my_list_1):
+    print("Print #1:", my_list_1)
+    print("Print #2:", my_list_2)
+    my_list_1 = [0,1]
+    del my_list_2
+    print("Print #3:", my_list_1)
+    print("Print #4:", my_list_2)
+
+my_list_2 = [2,3]
+my_function(my_list_2)
+#print("Print #5:", my_list_1)
+print("Print #6:", my_list_2)
 
 """
 Module 02 Lecture 01
