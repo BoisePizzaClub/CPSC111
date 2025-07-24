@@ -8,7 +8,13 @@ dura = int(input("Event duration (minutes): "))
 
 # Write your code here.
 
-elapsedHours = dura // 60 + hour
-elapsedMinutes = dura % 60
+startTimeMinutes = hour * 60 + mins #convert start time to minutes
 
-print("The even ended at", elapsedHours,":", elapsedMinutes)
+endTimeMinutes = startTimeMinutes + dura
+
+endHours = endTimeMinutes // 60
+
+endMinutes = endTimeMinutes % 60
+
+
+print("The event started at ", hour, ":", mins, " and ended at ", endHours ,":", endMinutes , sep="")

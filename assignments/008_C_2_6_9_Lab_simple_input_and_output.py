@@ -18,10 +18,9 @@ print(a, "multiplied by", b, "is", a * b)
 #print(a, "divided by", b, "is", a / b)
 print("\nThat's all, folks!")
 
-#experiment
-try:
-    print(a, "divided by", b, "is", a / b)
+# #experiment
+# try:
+#     print(a, "divided by", b, "is", a / b)
 
-except ZeroDivisionError:
-    print("You tried to divide by zero! Please enter nonzero numbers next time! Goodbye.")
-    
+# except ZeroDivisionError:
+#     print("You tried to divide by zero! Please enter nonzero numbers next time! Goodbye.")
